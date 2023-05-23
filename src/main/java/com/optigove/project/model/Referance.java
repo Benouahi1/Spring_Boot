@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 @Entity
 @Table(name = "referencecreance")
@@ -29,9 +28,9 @@ public class Referance {
     private String Object;
     @Column(name = "Adress", nullable = false, unique = true, length = 250, updatable = false)
     private String Adress;
-    @Column(name = "Libelle", nullable = false, unique = true, length = 250, updatable = false)
+    @Column(name = "libelle", nullable = false, unique = true, length = 250, updatable = false)
     private String Libelle;
-    @Column(name = "Cin", nullable = false, unique = true, length = 250, updatable = false)
+    @Column(name = "cin", nullable = false, unique = true, length = 250, updatable = false)
     private String Cin;
     @Column(name = "Montant", nullable = false, unique = true, length = 250, updatable = false)
     private Float Montant;

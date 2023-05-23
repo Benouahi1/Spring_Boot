@@ -2,7 +2,6 @@ package com.optigove.project.controller;
 
 
 import com.optigove.project.model.PersoneMoral;
-import com.optigove.project.model.Referance;
 import com.optigove.project.service.PersoneMoralService;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +22,7 @@ public class PersoneMoralController {
     public PersoneMoral create(@RequestBody PersoneMoral personeMoral){
         return personeMoralService.create(personeMoral);
     }
-    @GetMapping("/reade")
+    @GetMapping("/read")
     public List<PersoneMoral> read(){
         return personeMoralService.lire();
     }
